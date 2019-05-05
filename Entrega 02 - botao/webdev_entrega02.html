@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Projeto WebDev</title>
+</head>
+<body>
+	<header>
+		<h1 id='ola'>Olá, tudo bem?</h1>
+			<button onclick="mudarTexto()">
+				Mudar texto
+			</button>
+	</header>
+</body>
+<script>
+	function mudarTexto() {
+		var ola = document.getElementById('ola')
+		console.log(ola.textContent)
+		if (ola.textContent == 'Olá, tudo bem?') {
+			ola.textContent = 	'Tchau!'
+		} 
+		else if (ola.textContent == 'Tchau!') {
+			ola.textContent = 'Olá, tudo bem?'
+		}
+	}
+
+</script>
+</html> 
